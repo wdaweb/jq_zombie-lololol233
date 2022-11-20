@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack a Mole</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- 引入標題圖標 -->
+    <link rel="icon" type="image/x-icon" href="./images/icon.ico" />
+  </head>
+  <body>
+    <script src="/jquery-3.6.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 整個遊戲畫面的區域 -->
+    <div id="content">
+      <!-- 標題 -->
+      <h1>Whack a Mole</h1>
+
+      <!-- 角色選單 -->
+
+      <!-- 開始按鈕 -->
+      <button type="submit" id="btn-start">Start</button>
+
+      <!-- 按下開始按鈕後，按鈕變為顯示剩餘秒數 -->
+
+      <!-- 記分板 -->
+      <p>剩餘: <span id="left-time">0</span> 秒</p>
+      <p>
+        分數: <span id="text-score">0</span> 分 &nbsp;&nbsp; 最高分:
+        <span id="text-highscore">0</span> 分 &nbsp;&nbsp;最高分玩家:
+        <span id="text-highscorename">無</span>
+      </p>
+
+      <!-- 遊戲區域 -->
+      <div id="game">
+        <div class="hole hole1">
+          <span class="holeCircle"><img src="./images/mole.png" alt="" /></span>
+        </div>
+        <div class="hole hole2">
+          <span class="holeCircle"><img src="./images/mole.png" alt="" /></span>
+        </div>
+        <div class="hole hole3">
+          <span class="holeCircle"><img src="./images/mole.png" alt="" /></span>
+        </div>
+        <div class="hole hole4">
+          <span class="holeCircle"><img src="./images/mole.png" alt="" /></span>
+        </div>
+        <div class="hole hole5">
+          <span class="holeCircle"><img src="./images/mole.png" alt="" /></span>
+        </div>
+        <div class="hole hole6">
+          <span class="holeCircle"><img src="./images/mole.png" alt="" /></span>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>
